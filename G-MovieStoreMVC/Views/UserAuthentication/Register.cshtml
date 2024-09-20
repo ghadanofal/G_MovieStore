@@ -1,0 +1,57 @@
+﻿@model G_MovieStoreMVC.Models.DTO.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+
+<h2>Register</h2>
+
+
+<form class="w-40" asp-action="Register" method="post">
+            
+
+            <div class="input-container">
+                <label asp-for="Name" class="w-40">Name</label>
+                <input type="text" class="input" asp-for="Name">
+            </div>
+            <div class="message-box pd-x-28 error">
+                <span asp-validation-for="Name"></span>
+            </div>
+
+            <div class="input-container">
+                <label asp-for="Email" class="w-40">Email</label>
+                <input type="text" class="input" asp-for="Email">
+            </div>
+            
+
+    <div class="input-container">
+        <label asp-for="Username" class="w-40">Username</label>
+        <input type="text" class="input" asp-for="Username">
+    </div>
+    
+
+    
+    <div class="input-container">
+        <label asp-for="Password" class="w-40">Password</label>
+        <input type="Password" class="input" asp-for="Password">
+    </div>
+    
+    <div class="input-container">
+        <label asp-for="PasswordConfirm" class="w-40">PasswordConfirm</label>
+        <input type="Password" class="input" asp-for="PasswordConfirm">
+    </div>
+
+    <div class="input-container">
+        <label asp-for="Role" class="w-40">Role</label>
+        <input type="text" class="input" asp-for="Role">
+    </div>
+    
+            <div class="form-group">
+                <button type="submit" class="btn  btn btn-default">Register</button>
+            </div>
+
+            @if (TempData["msg"] != null)
+            {
+                <div class="alert alert-danger">@TempData["msg"]</div>
+            }
+        </form>
+   
