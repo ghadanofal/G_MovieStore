@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "871hi+UtHigm0/O5ZTCdPzFPVWPKIX+1mg5nIWTtO98=",
+  "Hash": "gcCA8qItsa/Y5izFi7pE3ZIDZj+lEZYirhT/CPk/yfs=",
   "Source": "G-MovieStoreMVC",
   "BasePath": "_content/G-MovieStoreMVC",
   "Mode": "Default",
@@ -1231,6 +1231,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\full stack\\asp_net\\API\\G-MovieStoreMVC\\G-MovieStoreMVC\\wwwroot\\Uploads\\5cfa71a0-d15a-4b8e-9af3-078a2e12c9fa.jpeg",
+      "SourceId": "G-MovieStoreMVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\full stack\\asp_net\\API\\G-MovieStoreMVC\\G-MovieStoreMVC\\wwwroot\\",
+      "BasePath": "_content/G-MovieStoreMVC",
+      "RelativePath": "Uploads/5cfa71a0-d15a-4b8e-9af3-078a2e12c9fa.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\5cfa71a0-d15a-4b8e-9af3-078a2e12c9fa.jpeg"
     },
     {
       "Identity": "D:\\full stack\\asp_net\\API\\G-MovieStoreMVC\\G-MovieStoreMVC\\wwwroot\\Uploads\\8d433954-3c31-45a0-94a1-2c19114d241d.png",

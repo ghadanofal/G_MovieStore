@@ -2,7 +2,6 @@
 using G_MovieStoreMVC.Models.Entity;
 using G_MovieStoreMVC.Repositories.Abstract;
 using Microsoft.AspNetCore.Mvc;
-
 namespace G_MovieStoreMVC.Controllers
 {
     public class GenreController : Controller
@@ -16,19 +15,15 @@ namespace G_MovieStoreMVC.Controllers
         {
             return View();
         }
-
         [HttpPost]
         public IActionResult Add(GenreVM genreVM)
         {
             if (!ModelState.IsValid)
                 return View(genreVM);
-
             var genre = new Genre
             {
                 GenreName = genreVM.GenreName,
-
             };
-
             var result = _genreService.Add(genre);
             if (result)
             {
@@ -41,7 +36,6 @@ namespace G_MovieStoreMVC.Controllers
                 return View(genre);
             }
         }
-
         public IActionResult Edit(int id)
         {
             var genre = _genreService.GetById(id);
@@ -49,17 +43,13 @@ namespace G_MovieStoreMVC.Controllers
             {
                 return NotFound();
             }
-
             var viewModel = new GenreVM
             {
-                
-               GenreName =  genre.GenreName
+
+                GenreName = genre.GenreName
             };
-
             return View(viewModel);
-
         }
-
         [HttpPost]
         public IActionResult Update(Genre model)
         {
@@ -77,18 +67,25 @@ namespace G_MovieStoreMVC.Controllers
                 return View(model);
             }
         }
-
         public IActionResult GenreList()
         {
+            // Fetch the list of Genre entities
             var data = this._genreService.List().ToList();
-            return View(data);
-        }
 
+            // Convert the List<Genre> to List<GenreVM>
+            var genreVMList = data.Select(g => new GenreVM
+            {
+                Id = g.Id,
+                GenreName = g.GenreName
+            }).ToList();
+
+            // Pass the List<GenreVM> to the view
+            return View(genreVMList);
+        }
         public IActionResult Delete(int id)
         {
             var result = _genreService.Delete(id);
             return RedirectToAction(nameof(GenreList));
         }
-
     }
 }
