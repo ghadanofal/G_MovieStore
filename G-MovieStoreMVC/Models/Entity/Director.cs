@@ -8,8 +8,7 @@ namespace G_MovieStoreMVC.Models.Entity
         [MaxLength(50)]
         public string Name { get; set; }
 		
-        //A director can have many movies
-		//public List<Movie> Movies { get; set; } = new List<Movie>();
+        
 
 	}
 }

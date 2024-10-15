@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("G-MovieStoreMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+798fcaacaad939054c6c03810a7bd71056aa8965")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+183f939e18e4013c655cc9c1efa65ead409469c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("G-MovieStoreMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("G-MovieStoreMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

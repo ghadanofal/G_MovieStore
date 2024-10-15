@@ -27,7 +27,7 @@ namespace G_MovieStoreMVC.Models.Entity
 		public IEnumerable<SelectListItem>? GenreList { get; set; }
 		[NotMapped]
 		public string? GenreNames { get; set; }
-        [NotMapped]
+        [NotMapped]	
         public MultiSelectList? MultiGenreList { get; set; } 
 
     }

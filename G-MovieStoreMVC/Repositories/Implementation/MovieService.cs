@@ -81,7 +81,7 @@ namespace G_MovieStoreMVC.Repositories.Implementation
 
             if (paging)
             {
-                // here we will apply paging
+                 //apply paging
                 int pageSize = 5;
                 int count = list.Count;
                 int TotalPages = (int)Math.Ceiling(count / (double)pageSize);
@@ -91,6 +91,10 @@ namespace G_MovieStoreMVC.Repositories.Implementation
                 data.TotalPages = TotalPages;
             }
 
+
+            //Explicit loading
+            // ->origin data
+            // -> related data
             foreach (var movie in list)
             {
                 var genres = (from genre in context.Genres
